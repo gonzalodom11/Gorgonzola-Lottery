@@ -103,13 +103,13 @@
                </font>
             </Text>
             <TextField fx:id="money" layoutX="269.0" layoutY="369.0" prefHeight="26.0" prefWidth="98.0" />
-            <TextArea fx:id="textBox2" layoutX="508.0" layoutY="123.0" prefHeight="137.0" prefWidth="384.0" />
-            <Label fx:id="nameLabel" layoutX="508.0" layoutY="32.0" prefHeight="27.0" prefWidth="275.0" text="Welcome">
+            <TextArea fx:id="textBox2" layoutX="508.0" layoutY="123.0" prefHeight="138.0" prefWidth="406.0" />
+            <Label fx:id="nameLabel" layoutX="508.0" layoutY="32.0" prefHeight="26.0" prefWidth="350.0" text="Welcome">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button alignment="CENTER_RIGHT" layoutX="814.0" layoutY="265.0" mnemonicParsing="false" onAction="#makeBetorSuperBet" style="-fx-background-color: #32CD32;;" text="Bet" textAlignment="CENTER" textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutX="860.0" layoutY="265.0" mnemonicParsing="false" onAction="#makeBetorSuperBet" style="-fx-background-color: #32CD32;;" text="Bet" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Gill Sans Ultra Bold Condensed" size="18.0" />
                </font>
@@ -124,6 +124,16 @@
                   <Font name="Gill Sans Ultra Bold Condensed" size="18.0" />
                </font>
             </Button>
+            <ImageView fitHeight="46.0" fitWidth="98.0" layoutX="14.0" layoutY="440.0" onDragDetected="#openLink" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/image004.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="96.0" layoutY="468.0" onDragDetected="#openLink" onDragDone="#openLink" strokeType="OUTSIDE" strokeWidth="0.0" text="gonzalodom11/Gorgonzola-Lottery" wrappingWidth="246.3999847412108">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
       </children>
     </AnchorPane>
   </children>

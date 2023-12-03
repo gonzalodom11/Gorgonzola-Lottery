@@ -1,6 +1,9 @@
 package application;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.zip.DataFormatException;
 
@@ -46,7 +49,9 @@ public class SecondaryController {
 	
 	public void createTolo() throws InvalidIntervalException {
 		this.tolo = Test.createRandom();
-		textBox2.setText(this.tolo.toString());
+		textBox2.setText(this.tolo.toString()
+				+"\n Go to github repository for more info "
+				+ "about this project.");
 	}
 	
 	public void makeBetorSuperBet() {
@@ -164,4 +169,9 @@ public class SecondaryController {
 		  stage.setScene(scene);
 		  stage.show();
 		 }
+	
+	public void openLink(ActionEvent event) throws URISyntaxException, IOException{
+		System.out.println("Clicked");
+		Desktop.getDesktop().browse(new URI("https://github.com/gonzalodom11/Gorgonzola-Lottery.com"));
+	}
 }
